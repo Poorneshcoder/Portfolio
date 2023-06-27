@@ -10,38 +10,36 @@ window.addEventListener('scroll', function(){
     header.classList.toggle('sticky', window.scrollY > 0);
 })
 
-// const hoverList = document.querySelector('li');
+// resume tabs
 
-// hoverList.forEach(btn => {
-//     btn.addEventListener('click', ()=>{
-//         document.querySelector('.hover-effect')?.classList.remove('hover-effect');
-//         btn.classList.add('.hover-effect');
-//     })
-// })
+// const tabBtns=document.querySelectorAll(".resume-container .resume-btn-container button");
+// const tabAllPanels=document.querySelectorAll(".resume-container .tabPanel");
 
-// function setActive(element) {
-//     var buttons = document.getElementsByTagName('a');
-//     for (var i = 0; i < buttons.length; i++) {
-//       buttons[i].classList.remove('hover-effect');
-//     }
-//     element.classList.add('hover-effect');
-//   }
+// function showPanel(panelIndex,displayData) {
+   
+//     tabButtons[panelIndex].style.backgroundColor=displayData;
+//     tabPanels.forEach(function(node){
+//         node.style.display="none";
+//     });
+//     tabPanels[panelIndex].style.display="block";
+//     tabPanels[panelIndex].style.backgroundColor=displayData;
+// }
+// showPanel(0);
 
 
-var tabButtons=document.querySelectorAll(".tabContainer .buttonContainer button");
-var tabPanels=document.querySelectorAll(".tabContainer  .tabPanel");
+// price tabs
 
-function showPanel(panelIndex,displayContent) {
-    // tabButtons.forEach(function(node){
-    //     node.style.backgroundColor="";
-    //     node.style.color="";
-    // });
-    tabButtons[panelIndex].style.backgroundColor=displayContent;
-    // tabButtons[panelIndex].style.color="white";
+const tabButtons=document.querySelectorAll(".tabContainer .buttonContainer button");
+const tabPanels=document.querySelectorAll(".tabContainer  .tabPanel");
+
+function showPanel(panelIndex,displayData) {
+   
+    tabButtons[panelIndex].style.backgroundColor=displayData;
     tabPanels.forEach(function(node){
         node.style.display="none";
     });
     tabPanels[panelIndex].style.display="block";
-    tabPanels[panelIndex].style.backgroundColor=displayContent;
+    tabPanels[panelIndex].style.backgroundColor=displayData;
 }
 showPanel(0);
+

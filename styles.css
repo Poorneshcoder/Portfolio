@@ -113,7 +113,7 @@ header .sticky{
     justify-content: space-between;
 }
 
-.skills img{
+.skills-set img{
     width: 70px;
     height: 70px;
     margin: 10px;
@@ -239,21 +239,20 @@ header .sticky{
 
 /* section 04 */
 
+
 .experience p{
     font-size: 16px;
     padding: 10px;
     margin-bottom: 10px;
     letter-spacing: 1px;
     color: red;
-    
 }
 
-.btns {
+.resume-btn-container {
     margin: 150px;
-    
 }
 
-button{
+.resume-btn-container button{
     margin-right: 50px;
     padding: 40px;
     width: 250px;
@@ -272,6 +271,7 @@ button{
 
 .year{
     margin: 100px;
+    margin-top: -30px;
 }
 .year h4{
     color: red;
@@ -310,11 +310,14 @@ button{
     letter-spacing: 1px;
 }
 .sub-inner .score{
-    padding: 10px 15px;
-    font-size: 18px;
-    box-shadow: 0 12px 48px 0px rgb(35, 38, 47);
-    border: 1px solid black;
-    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 25px;
+    width: 120px;
+    font-size: 26px;
+    font:bold;
+    background-color: black;
+    color: rgb(239, 24, 24);
+    border-radius: 5px;
 }
 
 .inner .description{
@@ -326,22 +329,148 @@ button{
 }
 
 .education-single-list{
-    
     position: relative;  
-    /* border-top: 5px solid #17191c; */
     width: 50px;
     z-index: 1;
-    /* border-radius: 6px; */
-    background: var(--background-color-1);
-    box-shadow: var(--shadow-1);
-    transition: var(--transition);
 }
 
-.total-education {
-    width: 75%;
+.resume-container .tabPanel {
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.resume-skills-container .tabPanel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* skills section */
+
+.skills{
+    margin: -20px 100px;
+    width: 100%;
+    display: flex;
+}
+
+.design-skills{
+    width: 45%;
+}
+.design-skills .content p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: red;
+}
+.design-skills .content h1{
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+.development-skills{
+    margin-left: 100px;
+    width: 45%;
+}
+.development-skills .content p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: red;
+}
+.development-skills .content h1{
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+.bar-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.skills-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.black-bar {
+    width: 100%;
+    background: hsla(259, 65%, 10%, 0.4);
+    height: 0.5rem;
+    position: absolute;
+    top: 10;
+    bottom: 0;
+}
+
+.bars {
+    width: 100% ;
+}
+
+.percentbar {
+    position: absolute;
+    top: 10;
+    bottom: 0;
+    background-color: rgb(6, 71, 71);
+    height: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.photo-bar {
+    width: 100%;
+}
+.figma-bar {
+    width: 90%;
+}
+.adobe-bar{
+    width: 60%;
+}
+.adobe-illustrator{
+    width: 70%;
+}
+
+.design-bar{
+    width: 90%;
+}
+
+/* my tabs for resume */
+
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 50px auto;
+    padding: 25px;
+    margin-top: -50px;
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    margin: 80px;
+    padding: 25px;
+    background: #e2e2e2;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 0px 12px 45px 0px rgb(rgb(174, 101, 101), rgb(85, 152, 85), rgb(14, 14, 31));
+}
+
+.mytabs .tab {
+    width: 100%;
+    background: #fff;
+   
+    order: 1;
+    display: none;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: #fff;
 }
 
 /* section 05 */
@@ -392,7 +521,6 @@ button{
     margin-left: 250px;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
 }
 
 .review{
@@ -428,6 +556,15 @@ button{
     box-shadow: 0 12px 48px 0px rgb(35, 38, 47);
     border: 1px solid black;
     border-radius: 10px;
+
+    margin: 10px;
+    padding: 10px 20px;
+    width: 120px;
+    font-size: 26px;
+    font:bold;
+    background-color: black;
+    color: rgb(239, 24, 24);
+    border-radius: 5px;
 }
 
 .review .description{
@@ -480,20 +617,11 @@ button{
 }
 
 .part-2{
-   /* margin-left: 350px; */
    width: 50%;
-   /* display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: repeat(4, 200px 100px);
-   padding: 10px;
-   gap: 30px; */
-   /* display: flex;
-   align-items: center;
-   justify-content: space-between; */
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    gap: 20px;
-   /* grid-auto-rows: minmax(200px, auto); */
+
 }
 .part-2 .images{
     height: 220px;
@@ -503,15 +631,10 @@ button{
     padding: 40px 70px;
     box-shadow: 0 12px 48px 0px rgb(84, 111, 181);
     border-radius: 10px;
-    /* grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 4; */
 }
 .part-2 .images img{
     /* padding: 5px; */
     background-color: #17191c;
-   
 }
 
 .part-2 .images h4{
@@ -523,109 +646,132 @@ button{
    
 }
 
-/* section 07 */
+/* section 7 */
 
-/* .pricing{
-    margin-left: 100px;
-    margin-bottom: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  
-    border-bottom: 2px solid black;
-    width: 80%;
-}
-.pricing .price-content {
+/* for tabs */
+
+.price-content {
     margin: 100px;
    
 }
 
-.pricing .price-content p{
+ .price-content p{
     margin-bottom: 10px;
     letter-spacing: 1px;
     color: red;
 }
-.pricing .price-content h1{
+ .price-content h1{
     font-size: 50px;
     font-weight: bold;
     letter-spacing: 1px;
 }
-.pricing .price-list{
-    margin-bottom: 100px;
-    width: 50%;
-    box-shadow: 0 12px 48px 0px rgb(84, 111, 181);
-    border-radius: 20px; */
 
-    /* height: 100vh; */
-    /* border: 1px solid black; */
-/* } */
-/* .price-list-btns {
-    
-    margin-top: 20px;
- 
+
+.tabContainer{
+    width: 50%;
+    height: 350px;
+    margin-left: 40%;
+    margin-top: -200px;   
+}
+.tabContainer .buttonContainer{
+    width: 100%;
+    height: 15%;
+    margin-left: 10px;
+}
+.tabContainer .buttonContainer button{
+    width: 25%;
+    height: 100%;
+    float: left;
+    border: none;
+    outline:none;
+    cursor: pointer;
     padding: 10px;
-   
-    box-shadow: 0 12px 48px 0px rgb(84, 111, 181);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
-/* .price-list .inner-price-heading{
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: #eee;
+}
+.tabContainer .buttonContainer button:hover{
+    background-color: #d7d4d4;
+}
+.tabContainer .tabPanel{
+    height: 85%;
+    color: white;
+    text-align: center;
+    padding-top: 105px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 22px;
+    display: none;
+}
+
+
+
+.tabPanel .inner-price-heading{
     margin: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between
 }
-.price-list .inner-price-heading .inner-price-left h1{
+.tabPanel .inner-price-heading .inner-price-left h1{
     margin: 20px 0px;
     letter-spacing: 1px;
 }
-.price-list .inner-price-heading .inner-price-left p{
+.tabPanel .inner-price-heading .inner-price-left p{
     font-size: 25px;
     letter-spacing: 1px;
+    margin-left: -200px;
 }
-.price-list .inner-price-heading .inner-price-right{
+.tabPanel .inner-price-heading .inner-price-right{
     margin: 10px;
     padding: 10px 20px;
     width: 120px;
-    font-size: 25px;
+    font-size: 26px;
+    font:bold;
     background-color: black;
     color: rgb(239, 24, 24);
     border-radius: 5px;
 
-} */
-/* .price-list .inner-price-content p{
+}
+
+.tabPanel .inner-price-content p{
     margin: 20px;
     font-size: 25px;
     letter-spacing: 1px;
-} */
-/* .price-list .working-list{
+} 
+
+.tabPanel .working-list{
     margin-bottom: 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.price-list .working-list ul li {
+.tabPanel .working-list ul li {
     font-size: 25px;
 }
-.price-list .price-list-order-btn {
+.tabPanel .price-list-order-btn {
     width: 80%;
     height: 40%;
     margin: 0px 80px 0px 80px;
     padding: 20px;
     border-radius: 20px;
 }
-.price-list .final-line{
+.tabPanel .final-line{
     margin-bottom: 20px;
-    margin-left: 250px;
+    margin-left: 60px;
     margin-top: 20px;
-} */
+}
+
+
 
 /* section 08 */
 
+.blog-heading{
+    margin-top: 50%;
+}
+
 .main-blog-content{
+    
     width: 90%;
-    /* margin-right: 10px; */
     margin-left: 100px;
     display: flex;
     align-items: center;
@@ -643,9 +789,6 @@ button{
     
 }
 .blog-heading .blog-content img{
-    /* margin-left: 10px; */
-    /* margin: 100px; */
-    /* padding: 10px; */
     width: 100%;
     border-radius: 10px;
 }
@@ -806,99 +949,6 @@ footer {
 }
 
 
-/* for tabs */
 
 
-.tabContainer{
-    width: 50%;
-    height: 350px;
-    margin-left: 250px;
-}
-.tabContainer .buttonContainer{
-    width: 100%;
-    height: 15%;
-    margin-left: 20px;
-    /* background-color: #eee; */
-}
-.tabContainer .buttonContainer button{
-    width: 25%;
-    height: 100%;
-    float: left;
-    border: none;
-    outline:none;
-    cursor: pointer;
-    padding: 10px;
-    font-family: sans-serif;
-    font-size: 18px;
-    background-color: #eee;
-}
-.tabContainer .buttonContainer button:hover{
-    background-color: #d7d4d4;
-}
-.tabContainer .tabPanel{
-    height: 85%;
-    /* background-color: gray; */
-    color: white;
-    text-align: center;
-    padding-top: 105px;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    font-size: 22px;
-    display: none;
-}
-
-
-
-.tabPanel .inner-price-heading{
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between
-}
-.tabPanel .inner-price-heading .inner-price-left h1{
-    margin: 20px 0px;
-    letter-spacing: 1px;
-}
-.tabPanel .inner-price-heading .inner-price-left p{
-    font-size: 25px;
-    letter-spacing: 1px;
-}
-.tabPanel .inner-price-heading .inner-price-right{
-    margin: 10px;
-    padding: 10px 20px;
-    width: 120px;
-    font-size: 25px;
-    background-color: black;
-    color: rgb(239, 24, 24);
-    border-radius: 5px;
-
-}
-
-.tabPanel .inner-price-content p{
-    margin: 20px;
-    font-size: 25px;
-    letter-spacing: 1px;
-} 
-
-.tabPanel .working-list{
-    margin-bottom: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.tabPanel .working-list ul li {
-    font-size: 25px;
-}
-.tabPanel .price-list-order-btn {
-    width: 80%;
-    height: 40%;
-    margin: 0px 80px 0px 80px;
-    padding: 20px;
-    border-radius: 20px;
-}
-.tabPanel .final-line{
-    margin-bottom: 20px;
-    margin-left: 250px;
-    margin-top: 20px;
-}
 
