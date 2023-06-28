@@ -5,26 +5,19 @@
     color: rgb(12, 10, 10);
 }
 
-html{
+ html{
     scroll-behavior: smooth;
 }
 
-/* .hover-effect{
-    color: red;
-} */
 
 header .sticky{
     margin-bottom: 200px;
     padding: 5px 500px;
-    background: #fff;
 }
 
 .nav-bar {  
-    /* margin-left: 100px; */
     margin-bottom: 500px;
     padding: 20px;
-    top: 0;
-    left: 0;
     width: 100%;
     display: flex;
     align-items: center;
@@ -65,7 +58,9 @@ header .sticky{
 .nav-list li a.active
 {
     color: red;
-}
+} 
+
+
 
 /* section 01 */
 .section-01{
@@ -384,7 +379,7 @@ header .sticky{
 .bar-box {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     padding: 1rem 0;
     margin-bottom: 1rem;
@@ -490,9 +485,7 @@ header .sticky{
     width: 35%;
     height: 65vh;
     margin: 20px;
-    /* padding: 50px; */
     box-shadow: 0 12px 48px 0px rgb(35, 37, 42);
-    /* border: 0.5px solid rgb(47, 49, 58); */
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -608,7 +601,6 @@ header .sticky{
     padding: 15px 20px;
     font-size: 20px;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     background-color: aliceblue;
     border-radius: 10px;
@@ -686,7 +678,6 @@ header .sticky{
     outline:none;
     cursor: pointer;
     padding: 10px;
-    font-family: sans-serif;
     font-size: 18px;
     background-color: #eee;
 }
@@ -699,7 +690,6 @@ header .sticky{
     text-align: center;
     padding-top: 105px;
     box-sizing: border-box;
-    font-family: sans-serif;
     font-size: 22px;
     display: none;
 }
@@ -949,6 +939,197 @@ footer {
 }
 
 
+@media only screen and (min-width:200px) and (max-width: 768px) 
+    {
 
+    .nav-bar{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .nav-list {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    /* section-01 */
+
+      .section-01 {
+        margin: 0px 100px;
+    } 
+    .section-01-container{
+        
+        flex-direction: column;
+        width: 100%;
+        /* margin: 20px; */
+        margin-top: -300px;
+        text-align: center;
+    }
+    .section-01-content .welcome{
+        font-size: 20px;
+    }
+    .sec-cont-h1{
+        font-size: 30px;
+    }
+    .section-01-content h2{
+        font-size: 20px;
+    }
+    .section-bottom {
+        margin-top: 50px;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .skills-set img,  .find i{
+        width: 35px;
+        height: 35px;
+        margin: 5px;
+        padding: 10px;
+        box-shadow: 0 12px 48px 0px rgb(48, 53, 66);
+        /* border: 0.5px solid rgb(47, 49, 58); */
+        border: none;
+    }
+
+    .photo img{
+        margin: 0px -800px;
+        width: 400px;
+        height: 80%;
+        box-shadow: 0 12px 48px 0px rgb(40, 45, 58);
+        border: 0.5px solid rgb(47, 49, 58);
+        border-radius: 5px;
+     }
+
+     /* section 02 */
+
+     .feature-sec-1{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+     }
+     .features .name, .features .name-h1{
+       text-align: center;
+    }
+    .box-1{
+        width: 100%;
+        overflow: none;
+    }
+    /* section - 03 */
+    .port-boxes{
+        flex-direction: column;
+    }
+     .port-box-1{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    /* section 04 */
+    .mytabs{
+        margin: 0px;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .resume-container .tabPanel, .resume-skills-container .tabPanel{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .skills {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* section 05 */
+
+    .user-box{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* section 06 */
+
+    .client-sections{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* text-align: center; */
+    }
+    .part-2{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+     
+     }
+
+     /* section 7 */
+
+     .price-content {
+        text-align: center;
+    }
+    .tabContainer .buttonContainer button{
+        width: 100%;
+        height: 100%;
+        float: none;
+       
+    }
+    .tabPanel .working-list{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* section 08 */
+
+    .main-blog-content{
+    
+        width: 100%;
+        margin-left: 100px;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-between; */
+ 
+       
+    }
+
+    /* section 09 */
+
+    .contact-form {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;  
+    }
+    .contact-part-2 form {
+        width: 100%;
+        margin: 20px;
+    }
+
+    /* section 10 */
+    .resource-links {
+        width: 100%;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
 
 
