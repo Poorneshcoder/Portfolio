@@ -1,7 +1,7 @@
 *{
     padding: 0; margin: 0;
     box-sizing: border-box;
-    background-color: rgba(240, 223, 223, 0.896);
+    /* background-color: white; */
     color: rgb(12, 10, 10);
 }
 
@@ -9,19 +9,21 @@
     scroll-behavior: smooth;
 }
 
-
 header .sticky{
     margin-bottom: 200px;
     padding: 5px 500px;
 }
 
 .nav-bar {  
-    margin-bottom: 500px;
-    padding: 20px;
+    margin-bottom: 50px;
+    padding: -10px;
     width: 100%;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0px 0px 20px 0px #d7d4d4;
+    background: white;
     position: fixed;
     transition: 0.6s;
     z-index: 100000;
@@ -36,7 +38,6 @@ header .sticky{
     margin: 10px;
     padding: 10px;
     list-style: none;
-
 }
 
 .nav-list {
@@ -49,6 +50,7 @@ header .sticky{
 
 
 .nav-list a {
+    font-size: 16px;
     text-decoration: none;
     position: relative;
     margin: 0 5px;
@@ -60,10 +62,24 @@ header .sticky{
     color: red;
 } 
 
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
 
 
 /* section 01 */
 .section-01{
+    margin-top: 100px;
     height: 120vh;
 
 }
@@ -85,9 +101,13 @@ header .sticky{
     font-size: 60px;
     padding-bottom: 10px;
 }
+.sec-cont-h1 span{
+    color: red;
+}
 .section-01-content h2{
     font-size: 40px;
     padding: 20px 0px;
+    color: red;
 }
 .section-01-content p{
     font-size: 20px;
@@ -97,8 +117,8 @@ header .sticky{
    margin-right: 80px;
    width: 500px;
    height: 100%;
-   box-shadow: 0 12px 48px 0px rgb(40, 45, 58);
-   border: 0.5px solid rgb(47, 49, 58);
+   box-shadow: -20px 12px 48px 0px rgb(40, 45, 58);
+   /* border: 0.5px solid rgb(47, 49, 58); */
    border-radius: 5px;
 }
 
@@ -115,7 +135,7 @@ header .sticky{
     padding: 20px;
     box-shadow: 0 12px 48px 0px rgb(48, 53, 66);
     /* border: 0.5px solid rgb(47, 49, 58); */
-    border: none;
+    border-radius: 10px;
 }
 
 .find i {
@@ -125,7 +145,11 @@ header .sticky{
     padding: 25px;
     box-shadow: 0 12px 48px 0px rgb(48, 53, 66);
     /* border: 0.5px solid rgb(47, 49, 58); */
-    border: none;
+    border-radius: 10px;
+}
+.find i:hover {
+    background: red;
+    color: white;
 }
 .hr {
     margin-top: 100px;
@@ -168,12 +192,23 @@ header .sticky{
     /* border: 0.5px solid rgb(47, 49, 58); */
     border-radius: 10px;
 }
+.box-1:hover, .box-1 i:hover {
+    background: red;
+    color: white;
+    transition: 0.5s;
+    display: block;
+}
 
 .box-1 i {
     padding-bottom: 20px;
     font-size: 40px;
     color: red;
+    
 }
+/* .box-1 i:hover, .box-1 h1:hover, .box-1 p:hover {
+    background: red;
+    color: #fff;
+} */
 .box-1 h1{
     font-size: 25px;
     padding-bottom: 20px;
@@ -182,11 +217,15 @@ header .sticky{
     font-size: 20px;
     line-height: 2rem;
 }
+.box-1 .fa-arrow-right{
+    display: none;
+}
 
 /* section - 03 */
 
 .portfolio {
     margin: 100px;
+    margin-top: -100px;
     height: 180vh;
 }
 
@@ -230,6 +269,10 @@ header .sticky{
     font-size: 25px;
     letter-spacing: 1px;
     padding: 20px 25px;
+}
+.port-box-1 h2:hover{
+    color: red;
+    cursor: pointer;
 }
 
 /* section 04 */
@@ -283,6 +326,7 @@ header .sticky{
     width: 80vh;
     height: 40vh;
     box-shadow: 0 12px 48px 0px rgb(35, 37, 42);
+    border-radius: 10px;
 }
 
 .sub-inner {
@@ -324,9 +368,14 @@ header .sticky{
 }
 
 .education-single-list{
-    position: relative;  
+    /* position: relative;   */
     width: 50px;
-    z-index: 1;
+    /* z-index: 1; */
+}
+.education-single-list .inner:hover {
+    color: white;
+    background: red;
+    
 }
 
 .resume-container .tabPanel {
@@ -455,7 +504,6 @@ header .sticky{
 .mytabs .tab {
     width: 100%;
     background: #fff;
-   
     order: 1;
     display: none;
 }
@@ -521,16 +569,17 @@ header .sticky{
     padding: 45px 40px;
     width: 80vh;
     height: 40vh;
+    border-radius: 10px;
     box-shadow: 0 12px 48px 0px rgb(35, 37, 42);
 }
 
 .sub-review {
-    display: flex;
     border-bottom: 1px solid black;
     padding-bottom: 20px;
     margin-bottom: 20px;
+    display: flex;
     align-items: center; 
-     justify-content: space-between;
+    justify-content: space-between;
 }
 
 .heading h4{
@@ -661,18 +710,22 @@ header .sticky{
 
 .tabContainer{
     width: 50%;
-    height: 350px;
+    height: 130vh;
     margin-left: 40%;
     margin-top: -200px;   
+    border-radius: 20px;
+    box-shadow: 5px 12px 20px 0px rgb(119, 150, 229);
 }
 .tabContainer .buttonContainer{
     width: 100%;
     height: 15%;
-    margin-left: 10px;
+    margin-left: 5px;
+    border-radius: 20px;
 }
 .tabContainer .buttonContainer button{
-    width: 25%;
-    height: 100%;
+    width: 33%;
+    height: 50%;
+    margin-top: 10px;
     float: left;
     border: none;
     outline:none;
@@ -698,6 +751,7 @@ header .sticky{
 
 .tabPanel .inner-price-heading{
     margin: 20px;
+    margin-top: -100px;
     display: flex;
     align-items: center;
     justify-content: space-between
@@ -739,16 +793,28 @@ header .sticky{
     font-size: 25px;
 }
 .tabPanel .price-list-order-btn {
-    width: 80%;
-    height: 40%;
-    margin: 0px 80px 0px 80px;
+    width: 90%;
+    height: 10%;
+    margin: 0px 70[x] 0px 70[x];
+    font-size: 20px;
     padding: 20px;
+    border: none;
     border-radius: 20px;
+    box-shadow: 0 12px 48px 0px rgb(48, 53, 66);
+}
+.tabPanel .price-list-order-btn:hover {
+    background: red;
+    color: white;
 }
 .tabPanel .final-line{
     margin-bottom: 20px;
     margin-left: 60px;
     margin-top: 20px;
+}
+.section-07 hr {
+   width: 80%;
+   margin: 40px auto;
+   
 }
 
 
@@ -756,7 +822,7 @@ header .sticky{
 /* section 08 */
 
 .blog-heading{
-    margin-top: 50%;
+    margin-top: 5%;
 }
 
 .main-blog-content{
@@ -776,12 +842,19 @@ header .sticky{
     margin-bottom: 100px;
     border-radius: 10px;
     box-shadow: 0px 12px 48px 0px rgb(119, 150, 229);
+}
+.blog-heading .blog-content:hover{
+    color: white;
+    /* background: black; */
+    /* transition: var(--transition); */
     
 }
 .blog-heading .blog-content img{
     width: 100%;
     border-radius: 10px;
+
 }
+
 .blog-heading .blog-content .sub-heading{
     margin: 10px 10px 10px 0px;
     display: flex;
@@ -794,6 +867,10 @@ header .sticky{
 }
 .blog-heading .blog-content .heading{
     font-size: 25px;
+}
+.blog-heading .blog-content .heading p:hover{
+    color: red;
+   
 }
 
 /* section 09 */
@@ -828,6 +905,7 @@ header .sticky{
     width: 350px;
     margin: 22px;
     border-radius: 20px;
+    
 }
 .contact .contact-part-1 h1{
     margin: 22px;
@@ -845,8 +923,13 @@ header .sticky{
     margin-left: 20px;
     margin: 20px;
     padding: 15px;
-    border: 1px solid black;
-    box-shadow: 0px 12px 10px 0px rgb(119, 150, 229);
+    /* border: 1px solid black; */
+    box-shadow: 0 12px 48px 0px rgb(48, 53, 66);
+    border-radius: 10px;
+}
+.contact .contact-part-1 i:hover{
+    background: red;
+    color: white;
 }
 
 /* contact part 2 */
@@ -856,8 +939,7 @@ header .sticky{
     width: 1000px;
     margin-left: 100px;
     padding: 60px;
-    box-shadow: 0px 12px 10px 0px rgb(119, 150, 229);
-    
+    box-shadow: 0px 12px 10px 10px rgb(119, 150, 229);
 }
 .contact-part-2 form {
     margin-bottom: 10px;
@@ -881,9 +963,20 @@ header .sticky{
     width: 90%;
     height: 50px;
     padding: 10px;
+    color: red;
+    font-size: 20px;
     border-radius: 10px;
+    border: none;
+    cursor: pointer;
 }
-
+.contact-part-2 button i {
+    color: red;
+}
+.contact-part-2 button:hover{
+    background: red;
+    color: white;
+    transition: 0.5s;
+}
 /* section 10 */
 
 .logo-links {
@@ -900,8 +993,12 @@ header .sticky{
     height: 50px;
     margin: 10px;
     padding: 15px;
-    border: 1px solid black;
-    box-shadow: 0px 12px 10px 0px rgb(119, 150, 229);
+    box-shadow: 0 12px 48px 0px rgb(48, 53, 66);
+    border-radius: 10px;
+}
+.logo-links i:hover{
+    background: red;
+    color: white;
 }
 
 .quick-links {
@@ -941,8 +1038,7 @@ footer {
 
 @media only screen and (min-width:200px) and (max-width: 768px) 
     {
-
-    .nav-bar{
+    /* .nav-bar{
         width: 100%;
         flex-direction: column;
         align-items: center;
@@ -950,24 +1046,42 @@ footer {
         text-align: center;
     }
     .nav-list {
-        width: 100%;
+        width: 40%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
+
+        position: fixed;
+        height: 50vh;
+        background: #2c3e50;
+        top:80px;
+        left: -100%;
+        transition: all .5s;
     }
+
+    .checkbtn{
+        display: block;
+    }
+
+     #check:checked ~ ul{
+        left: 0;
+    } */
+
     /* section-01 */
 
       .section-01 {
-        margin: 0px 100px;
+        margin-top: 600px;
     } 
     .section-01-container{
-        
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 100%;
         /* margin: 20px; */
         margin-top: -300px;
         text-align: center;
+    }
+    .section-01-content{
+        /* margin-top: -200px; */
     }
     .section-01-content .welcome{
         font-size: 20px;
@@ -995,15 +1109,18 @@ footer {
     }
 
     .photo img{
-        margin: 0px -800px;
         width: 400px;
-        height: 80%;
+        height: 100%;
         box-shadow: 0 12px 48px 0px rgb(40, 45, 58);
-        border: 0.5px solid rgb(47, 49, 58);
         border-radius: 5px;
      }
 
      /* section 02 */
+
+     .features {
+        margin: 100px;
+        height: 200vh;
+    }
 
      .feature-sec-1{
         width: 100%;
@@ -1017,49 +1134,111 @@ footer {
     }
     .box-1{
         width: 100%;
+        height: 50%;
         overflow: none;
     }
     /* section - 03 */
+    .portfolio {
+        margin: 100px;
+        margin-top: -100px;
+        height: 340vh;
+    }
     .port-boxes{
+        margin-left: -100px;
         flex-direction: column;
+
     }
      .port-box-1{
         width: 100%;
+        height: 50vh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
     }
     /* section 04 */
+    .year{
+        margin: 100px;
+        margin-top: 30px;
+    }
     .mytabs{
         margin: 0px;
         flex-direction: column;
         align-items: center;
         flex-wrap: nowrap;
     }
-    .resume-container .tabPanel, .resume-skills-container .tabPanel{
+    .mytabs label {
+        margin: 0px;
+        padding: 25px;
+        background: #e2e2e2;
+        font-size: 25px;
+        font-weight: bold;
+        box-shadow: 0px 12px 45px 0px rgb(rgb(174, 101, 101), rgb(85, 152, 85), rgb(14, 14, 31));
+    }
+    .resume-container .tabPanel{
+        width: -20%;
+        margin: 20px;
+        flex-direction: column;
+    }
+    .resume-skills-container .tabPanel{
         width: 100%;
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: center;
+        text-align: center; */
+    }
+    .skills {
+        width: 100%;
+        margin-top: 30px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
     }
-    .skills {
+    .education-single-list .inner{
+        width: 500px;
+        height: 400px;
+        margin: 40px;
+    }
+    .education-list{
+        margin-left: -20px;
+    }
+    .sub-inner{
         width: 100%;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        align-items: flex-start;
     }
 
     /* section 05 */
 
     .user-box{
-        width: 100%;
+        width: 90%;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        margin-left: 50px;
+    }
+    .user-box-1{
+        width: 60%;
+        height: 45vh;
+        margin: 10px;
+    }
+    .user-box-1 img{
+        width: 100%;
+        padding: 35px 30px;
+        border-radius: 45px;
+    }
+    .review{
+        width: 500px;
+        height: 400px;
+        margin: 40px;
+        margin-left: 0px;
+    }
+    .sub-review {
+        border-bottom: 1px solid black;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: space-between;
     }
 
     /* section 06 */
@@ -1071,11 +1250,18 @@ footer {
         justify-content: center;
         /* text-align: center; */
     }
+    .client-sections .part-1{
+        width: 100%;
+        margin-left: -150px;
+    }
+    
     .part-2{
         width: 100%;
+        margin-left: 100px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
+        align-items: center;
      
      }
 
@@ -1083,32 +1269,61 @@ footer {
 
      .price-content {
         text-align: center;
+        margin-bottom: 50px;
+    }
+    .tabContainer{
+        width: 75%;
+        height: 160vh;
+        margin-left: 10%;
+        margin-top: 100px;   
     }
     .tabContainer .buttonContainer button{
-        width: 100%;
-        height: 100%;
+        width: 99%;
+        height: 50%;
         float: none;
-       
+        margin-left: -2px;
     }
+    .tabContainer .buttonContainer{
+        margin-bottom: 150px;
+    }
+    .tabPanel .inner-price-heading{
+       flex-direction: column;
+       align-items: flex-start;
+    }
+    .tabPanel .inner-price-content p{
+        /* margin: 20px; */
+        font-size: 24px;
+        font-weight: 50px;
+        /* letter-spacing: 1px; */
+    } 
     .tabPanel .working-list{
-        width: 100%;
+        width: 70%;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
+        /* align-items: center;
+        justify-content: space-between; */
     }
 
     /* section 08 */
 
     .main-blog-content{
     
-        width: 100%;
-        margin-left: 100px;
+        width: 70%;
+        margin-left: 50px;
         flex-direction: column;
         align-items: center;
-        /* justify-content: space-between; */
- 
-       
     }
+    .blog-heading .blog-content{
+        width: 100%;
+        margin: 30px;
+        padding: 50px;
+        margin-bottom: 100px;
+    }
+    /* .blog-heading .blog-content .sub-heading{
+        margin: 10px 10px 10px 0px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    } */
 
     /* section 09 */
 
@@ -1117,9 +1332,21 @@ footer {
         flex-direction: column;
         align-items: center;  
     }
+    .contact .contact-part-1{
+        margin: 50px;
+        width: 400px;
+        height: 80vh;
+        border-radius: 20px;
+        box-shadow: 5px 12px 20px 0px rgb(119, 150, 229);
+    }
+    .contact-part-2 {
+        margin: 100px;
+        width: 500px;
+        margin-left: 10px;
+    }
     .contact-part-2 form {
         width: 100%;
-        margin: 20px;
+        margin: 10px;
     }
 
     /* section 10 */
